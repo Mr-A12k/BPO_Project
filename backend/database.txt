@@ -7,10 +7,10 @@ First, create the database and user:
 CREATE DATABASE IF NOT EXISTS bpo_management;
 
 -- Create a dedicated user (replace 'password' with a strong password)
-CREATE USER IF NOT EXISTS 'bpo_admin'@'localhost' IDENTIFIED BY 'password';
+CREATE USER IF NOT EXISTS 'kabix'@'localhost' IDENTIFIED BY 'password';
 
 -- Grant privileges
-GRANT ALL PRIVILEGES ON bpo_management.* TO 'bpo_admin'@'localhost';
+GRANT ALL PRIVILEGES ON bpo_management.* TO 'kabix'@'localhost';
 
 -- Apply privileges
 FLUSH PRIVILEGES;
@@ -231,19 +231,19 @@ DELIMITER ;
 
 3. Verify the database structure:
 
-   mysql -u bpo_admin -p -D bpo_management -e "SHOW TABLES;"
+   mysql -u kabix -p -D bpo_management -e "SHOW TABLES;"
 
 
 ## 6. Backup and Recovery
 
 To create a backup:
 
-mysqldump -u bpo_admin -p bpo_management > bpo_management_backup.sql
+mysqldump -u kabix -p bpo_management > bpo_management_backup.sql
 
 
 To restore from backup:
 
-mysql -u bpo_admin -p bpo_management < bpo_management_backup.sql
+mysql -u kabix -p bpo_management < bpo_management_backup.sql
 
 
 This database structure supports all the functionality in your BPO management system with proper relationships,
