@@ -10,8 +10,9 @@ Before you begin, ensure you have the following installed:
 
 ### Option A: Clone with Git
 
-git clone https://github.com/your-repository/bpo-management-system.git
-cd bpo-management-system/backend
+git clone https://github.com/Mr-A12k/BPO_Project.git
+cd BPO_Project
+cd backend
 
 
 ### Option B: Download Manually
